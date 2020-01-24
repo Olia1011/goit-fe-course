@@ -1,0 +1,112 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+
+body {
+    font-family: "Playfair Display", serif;
+    color: #626262;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 901px;
+    margin: 0 auto;
+}
+
+.page-header {
+    margin-bottom: 25px;
+}
+
+.page-nav {
+    padding: 77px 0;
+}
+
+
+.main-menu {
+    font-size: 14px;
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+    width: 901px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+
+.main-menu li {
+    display: inline-block;
+}
+
+.main-menu li:not(:last-child) {
+    margin-right: 105px;
+}
+.main-menu a {
+    color: #626262;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 29px;
+}
+
+.main-menu a:hover {
+    color: #03a9f4;
+}
+
+
+.Lifestyle {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+
+}
+
+.lifestyle-list-item {
+    display: inline-block;
+    width: 419px;
+    margin-right: 58px;
+    box-sizing: border-box;
+}
+
+.lifestyle-list-item :last-child {
+    margin-right: 0px;
+}
+
+
+.lifestyle-list-item h2 {
+    color: #626262;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+
+.inset p {
+    color: #626262;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 17px;
+
+}
+
+
+
+button {
+    color: #626262;
+    font-size: 20px;
+    text-decoration: none;
+    background: #ffffff;
+}
