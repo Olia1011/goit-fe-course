@@ -36,7 +36,7 @@ img {
 
 
 .main-menu {
-    font-size: 14px;
+    font-size: 0px;
     list-style: none;
     display: inline-block;
     vertical-align: middle;
@@ -55,11 +55,13 @@ img {
     margin-right: 105px;
 }
 .main-menu a {
+    font-size: 14px;
     color: #626262;
     font-weight: 400;
     text-transform: uppercase;
     text-decoration: none;
     line-height: 29px;
+    display: block;
 }
 
 .main-menu a:hover {
@@ -67,7 +69,8 @@ img {
 }
 
 
-.Lifestyle { 
+.lifestyle {
+    font-size: 0px:
     list-style: none;
     padding: 0;
     margin: 0;
@@ -91,15 +94,21 @@ img {
     color: #626262;
     font-size: 30px;
     line-height: 36px;
+    margin: 0px;
 }
 
 
 .inset p {
     color: #626262;
+    font-size: 14px;
     text-transform: uppercase;
     text-decoration: none;
+    margin: 0px;
     line-height: 17px;
+}
 
+.lifestyle-list-item:nth-last-child(-n+2) {
+    margin-bottom: 0px;
 }
 
 
@@ -111,12 +120,8 @@ button {
     text-decoration: none;
     background: #ffffff;
     border: 1px solid #626262;
-    width: 163px;
-    height: 61px;
-    vertical-align: middle;
-    margin-left: 358px;
-    margin-bottom: 70px;
-    margin-top: -61px;
+    margin: 0 auto;
+    padding: 16px 33px;
+    display: block;
     cursor: pointer;
-
 }
