@@ -62,6 +62,7 @@ img {
     text-decoration: none;
     line-height: 29px;
     display: block;
+    margin: 0;
 }
 
 .main-menu a:hover {
@@ -110,9 +111,11 @@ img {
 
 .lifestyle-list-item:nth-last-child(-n+2) {
     margin-bottom: 0px;
-    padding-bottom: 49px;
 }
 
+.lifestyle {
+    margin-bottom: 49px;
+}
 
 
 button {
@@ -120,11 +123,17 @@ button {
     font-size: 20px;
     line-height: 29px;
     text-decoration: none;
-    background: #ffffff;
+    background-color: #ffffff;
     border: 1px solid #626262;
     margin: 0 auto;
     width: 166px;
     height: 61px;
     display: block;
     cursor: pointer;
+}
+
+button:hover {
+    border: 1px dotted #626262;
+    color: #626262;
+    background: rgba (0,0,0,0);
 }
