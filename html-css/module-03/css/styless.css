@@ -110,6 +110,7 @@ img {
 
 .lifestyle-list-item:nth-last-child(-n+2) {
     margin-bottom: 0px;
+    padding-bottom: 49px;
 }
 
 
@@ -122,7 +123,8 @@ button {
     background: #ffffff;
     border: 1px solid #626262;
     margin: 0 auto;
-    padding: 16px 33px;
+    width: 166px;
+    height: 61px;
     display: block;
     cursor: pointer;
 }
