@@ -1,0 +1,141 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #626262;
+    font-size: 14px;
+
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.clearfix::after {
+    display: table;
+    content: " ";
+    clear: both;
+}
+
+
+
+.container {
+    width: 1112px;
+    margin: 0 auto;
+}
+
+.page-nav {
+    padding: 77px 0;
+}
+
+.site-logo {
+    display: inline-block;
+}
+
+
+.main-menu {
+    font-size: 14px;
+    line-height: 13px;
+    font-family: "Open Sans", sans-serif ;
+    font-weight: 700px;
+    list-style: none;
+    width: 467px;
+    margin: 0;
+    padding: 0;
+    float: right;
+
+}
+
+.main-menu li {
+    float: left;
+}
+
+.main-menu li:not(:last-child) {
+    margin-right: 27px;
+}
+
+.main-menu a {
+    font-size: 14px;
+    color: #515151;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    margin: 0;
+}
+
+.main-menu a:hover {
+    color: #03a9f4;
+}
+
+h2 {
+    text-align: center;
+    font-size: 48px;
+    letter-spacing: -1px;
+    line-height: 67px;
+    font-weight: 900;
+    color: #515151;
+    font-family:'Playfair Display', serif;
+}
+
+h2::after {
+    display: block;
+    width: 164px;
+    height: 7px;
+    line-height: 67px;
+    background-color: #1abc9c;
+    content: '';
+    margin: 0 auto;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 31px;
+    font-weight: 600;
+    color: #515151;
+    font-family:'Open Sans', serif;
+}
+
+h3::after {
+    display: block;
+    width: 137px;
+    height: 4px;
+    line-height: 67px;
+    background-color: #1abc9c;
+    content: '';
+}
+
+p {
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #555252;
+    font-family:'Open Sans', serif;
+}
+
+button {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    text-decoration: none;
+    background-color: #4ec6ab;
+    width: 157px;
+    height: 45px;
+    display: block;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #ffffff;
+    background: rgba (0,0,0,0);
+}
