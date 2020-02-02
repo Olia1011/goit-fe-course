@@ -34,7 +34,7 @@ img {
 }
 
 .page-nav {
-    padding: 77px 0;
+    padding: 28px 0;
 }
 
 .site-logo {
@@ -97,12 +97,56 @@ h2::after {
     margin: 0 auto;
 }
 
+.products-list {
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+}
+
+.products-list-item {
+    float: left;
+    width: 250px;
+    margin-right: 30px;
+    margin-bottom: 22px;
+    background-color: #1abc9c;
+    
+}
+
+
+.products-list-item:nth-child(4n) {
+    margin-right: 0px;
+}
+
+.products-list-item:hover .img {
+    filter: grayscale(1);
+}
+
+
+.news-list {
+    list-style: none;
+    width: 1112px;
+    margin: 0px;
+    padding: 0px;
+
+}
+.news-list-item {
+    width: 350px;
+    float: left;
+}
+
+.news-list-item:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+
+
 h3 {
     font-size: 18px;
+    width: 350px;
     line-height: 31px;
     font-weight: 600;
     color: #515151;
-    font-family:'Open Sans', serif;
+    font-family:'Open Sans', sans-serif;
+    margin: 0px;
 }
 
 h3::after {
@@ -112,14 +156,19 @@ h3::after {
     line-height: 67px;
     background-color: #1abc9c;
     content: '';
+    margin: 0px;
 }
 
 p {
     font-size: 14px;
-    line-height: 28px;
+    display: inline-block;
+    width: 350px;
+    line-height: 30px;
+    letter-spacing: 0px;
     font-weight: 400;
     color: #555252;
-    font-family:'Open Sans', serif;
+    font-family:'Open Sans', sans-serif;
+    margin-right: 0px;
 }
 
 button {
@@ -133,6 +182,8 @@ button {
     height: 45px;
     display: block;
     cursor: pointer;
+    margin: 0px;
+    margin-bottom: 81px;
 }
 
 button:hover {
