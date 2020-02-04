@@ -9,7 +9,7 @@ html {
 
 body {
     font-family: "Open Sans", sans-serif;
-    color: #626262;
+    color: #515151;
     font-size: 14px;
 
 }
@@ -39,8 +39,22 @@ img {
 
 .site-logo {
     display: inline-block;
+    font-size: 30px;
+    line-height: 38px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    color: #515151;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
 
+.site-logo::first-letter {
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    color: #1abc9c;
+}
 
 .main-menu {
     font-size: 14px;
@@ -71,23 +85,31 @@ img {
     text-decoration: none;
     display: block;
     margin: 0;
+    margin-top: 8px;
 }
 
 .main-menu a:hover {
-    color: #03a9f4;
+    color: #1abc9c;
 }
 
-h2 {
+.information { 
+    margin: 0;
+    padding: 0;
+    margin-top: 100px;
+}
+
+.title {
     text-align: center;
     font-size: 48px;
     letter-spacing: -1px;
     line-height: 67px;
     font-weight: 900;
     color: #515151;
-    font-family:'Playfair Display', serif;
+    font-family:'Roboto', sans-serif;
+    margin-bottom: 110px;
 }
 
-h2::after {
+.title::after {
     display: block;
     width: 164px;
     height: 7px;
@@ -95,6 +117,8 @@ h2::after {
     background-color: #1abc9c;
     content: '';
     margin: 0 auto;
+    margin-bottom: 30px;
+    magin-top: 27px;
 }
 
 .products-list {
@@ -105,22 +129,57 @@ h2::after {
 
 .products-list-item {
     float: left;
-    width: 250px;
-    margin-right: 30px;
-    margin-bottom: 22px;
-    background-color: #1abc9c;
-    
+    width: 258px;
+    height: 325px;
+    margin-right: 25px;
+    margin-bottom: 25px;
 }
-
 
 .products-list-item:nth-child(4n) {
     margin-right: 0px;
 }
 
-.products-list-item:hover .img {
-    filter: grayscale(1);
+.products-list-item:nth-last-child(-n+4) {
+    margin-bottom: 0px;
 }
 
+.about {
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 32px;
+    color: #ffffff;
+    font-family: "Roboto";
+    font-weight: 900;
+    text-align: left;
+    padding-left: 12px;
+    background-color: #000000;
+    width: 202px;
+    height: 40px;
+    float: left;
+}
+
+.about:hover {
+    background-color: #1abc9c;
+}
+
+.price {
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 32px;
+    color: #ffffff;
+    font-family: "Roboto";
+    font-weight: 900;
+    text-align: center;
+    background-color: #8c8c8c;
+    width: 53px;
+    height: 40px;
+    float:left;
+
+}
+
+.price:hover {
+    background-color: #7fd9c7;
+}
 
 .news-list {
     list-style: none;
@@ -129,27 +188,29 @@ h2::after {
     padding: 0px;
 
 }
+
 .news-list-item {
-    width: 350px;
+    width: 352px;
     float: left;
 }
 
 .news-list-item:not(:nth-child(3n)) {
-    margin-right: 30px;
+    margin-right: 28px;
 }
 
 
-h3 {
+h4 {
     font-size: 18px;
-    width: 350px;
     line-height: 31px;
     font-weight: 600;
     color: #515151;
     font-family:'Open Sans', sans-serif;
-    margin: 0px;
+    margin: 0;
+    margin-bottom: 45px;
+    margin-top: 13px;
 }
 
-h3::after {
+h4::after {
     display: block;
     width: 137px;
     height: 4px;
@@ -157,21 +218,23 @@ h3::after {
     background-color: #1abc9c;
     content: '';
     margin: 0px;
+    margin-top: 10px;
 }
 
 p {
     font-size: 14px;
-    display: inline-block;
-    width: 350px;
     line-height: 30px;
     letter-spacing: 0px;
     font-weight: 400;
     color: #555252;
     font-family:'Open Sans', sans-serif;
-    margin-right: 0px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 12px;
+
 }
 
-button {
+.inf {
     color: #ffffff;
     font-size: 16px;
     line-height: 28px;
@@ -182,11 +245,12 @@ button {
     height: 45px;
     display: block;
     cursor: pointer;
-    margin: 0px;
-    margin-bottom: 81px;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
 }
 
-button:hover {
+.inf:hover {
     color: #ffffff;
     background: rgba (0,0,0,0);
 }
