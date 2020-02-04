@@ -106,6 +106,7 @@ img {
     font-weight: 900;
     color: #515151;
     font-family:'Roboto', sans-serif;
+    margin: 0;
     margin-bottom: 110px;
 }
 
@@ -130,7 +131,6 @@ img {
 .products-list-item {
     float: left;
     width: 258px;
-    height: 325px;
     margin-right: 25px;
     margin-bottom: 25px;
 }
@@ -141,6 +141,14 @@ img {
 
 .products-list-item:nth-last-child(-n+4) {
     margin-bottom: 0px;
+}
+
+.products-list-item:hover .about {
+    background-color: #1abc9c;
+
+}
+.products-list-item:hover .price {
+    background-color: #7fd9c7;
 }
 
 .about {
@@ -155,11 +163,8 @@ img {
     background-color: #000000;
     width: 202px;
     height: 40px;
+    margin: 0;
     float: left;
-}
-
-.about:hover {
-    background-color: #1abc9c;
 }
 
 .price {
@@ -171,14 +176,17 @@ img {
     font-weight: 900;
     text-align: center;
     background-color: #8c8c8c;
-    width: 53px;
+    width: 54px;
     height: 40px;
+    margin: 0;
     float:left;
 
 }
 
-.price:hover {
-    background-color: #7fd9c7;
+.short {
+    background-color: #e9f0fd;
+    width: 258px;
+    height: 325px;
 }
 
 .news-list {
@@ -190,7 +198,7 @@ img {
 }
 
 .news-list-item {
-    width: 352px;
+    width: 350px;
     float: left;
 }
 
@@ -198,8 +206,13 @@ img {
     margin-right: 28px;
 }
 
+.picture {
+    margin: 0;
+    margin-bottom: 13px;
+}
 
-h4 {
+
+.discription {
     font-size: 18px;
     line-height: 31px;
     font-weight: 600;
@@ -207,10 +220,9 @@ h4 {
     font-family:'Open Sans', sans-serif;
     margin: 0;
     margin-bottom: 45px;
-    margin-top: 13px;
 }
 
-h4::after {
+.discription::after {
     display: block;
     width: 137px;
     height: 4px;
@@ -252,5 +264,5 @@ p {
 
 .inf:hover {
     color: #ffffff;
-    background: rgba (0,0,0,0);
+    background-color: #1abc9c;
 }
