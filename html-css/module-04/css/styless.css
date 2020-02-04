@@ -159,10 +159,11 @@ img {
     font-family: "Roboto";
     font-weight: 900;
     text-align: left;
+    text-transform: uppercase;
     padding-left: 12px;
     background-color: #000000;
     width: 202px;
-    height: 40px;
+    height: 38px;
     margin: 0;
     float: left;
 }
@@ -177,7 +178,7 @@ img {
     text-align: center;
     background-color: #8c8c8c;
     width: 54px;
-    height: 40px;
+    height: 38px;
     margin: 0;
     float:left;
 
