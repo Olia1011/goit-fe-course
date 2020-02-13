@@ -89,14 +89,20 @@ img {
     margin: 0;
 }
 
+
+.main-menu a:hover {
+    color: #f38181;
+}
+
 .main-menu a::after {
     display: block;
-    width: ;
+    width: 0;
     height: 2px;
     background-color: #f38181;
     content: '';
 }
 
-.main-menu a:hover {
+.main-menu a:hover::after {
     color: #f38181;
+    width: auto;
 }
