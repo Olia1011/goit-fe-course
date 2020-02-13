@@ -103,6 +103,5 @@ img {
 }
 
 .main-menu a:hover::after {
-    color: #f38181;
     width: auto;
 }
