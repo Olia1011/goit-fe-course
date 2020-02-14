@@ -4,17 +4,13 @@ html {
 
 *, *::before, *::after {
     box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
-
 
 a {
     text-decoration: none;
   }
-
-p, h1, h2, h3 {
-    margin: 0;
-    padding: 0;
-}
 
 .visually-hidden {
     position:absolute;
@@ -64,8 +60,6 @@ img {
     color: #515151;
     text-transform: uppercase;
     text-decoration: none;
-    margin: 0;
-    padding: 0;
 }
 
 .site-logo::first-letter {
@@ -81,8 +75,7 @@ img {
     font-family: "Open Sans", sans-serif ;
     font-weight: 700;
     list-style: none;
-    margin: 0;
-    padding: 0;
+    padding-top: 10px;
     float: right;
 }
 
