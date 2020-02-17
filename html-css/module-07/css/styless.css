@@ -1,0 +1,347 @@
+
+html {
+    box-sizing: border-box;
+}
+
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-700 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* roboto-slab-regular - latin */
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/roboto-slab-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-slab-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* dancing-script-regular - latin */
+@font-face {
+    font-family: 'Dancing Script';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/dancing-script-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/dancing-script-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* dancing-script-700 - latin */
+  @font-face {
+    font-family: 'Dancing Script';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/dancing-script-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/dancing-script-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+.visually-hidden {
+    position:absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 945px;
+    margin: 0 auto;
+}
+
+.page-header {
+    padding-top: 52px;
+    padding-bottom: 120px;
+}
+.page-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-logo {
+    display: flex;
+    font-size: 35px;
+    letter-spacing: 1px;
+    line-height: 41px;
+    font-family: 'Dancing script', serif;
+    font-weight: 700;
+    color: #fed136;
+    text-decoration: none;
+}
+
+.main-menu {
+    display: flex;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400px;
+    list-style: none;
+    width: 482px;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.main-menu-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.main-menu a {
+    font-size: 14px;
+    color: #222222;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0;
+}
+
+.main-menu a:hover {
+    color: #fed136;
+}
+
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    letter-spacing: -1px;
+    color: #222222;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+
+.title-part {
+    display: block;
+    font-size: 20px;
+    color: #777777;
+    font-family: 'Dancing Script', serif;
+    font-weight: 400;
+    text-align: center;
+    text-transform: none;
+    margin: 0;
+    margin-bottom: 72px;
+}
+
+.service-list-item {
+    width: 280px;
+    list-style: none;
+    margin: 0;
+}
+
+.service-list-item::before {
+
+    height: 75px;
+    width: 75px;
+    display: block;
+    content: '';
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: 2px solid #fdd135;
+    margin: 0 auto;
+    background-position: center;
+}
+
+.commerce::before{
+    background-image: url(../icon/bascet.png);
+
+}
+
+.web::before{
+    background-image: url(../icon/laptop.png);
+}
+
+.security::before {
+    background-image: url(../icon/locked.png);
+}
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.title-article {
+    font-size: 18px;
+    color: #222222;
+    letter-spacing: 0px;
+    line-height: 48px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.text-article {
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: -0.35px;
+    color: #777777;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.services {
+    margin-bottom: 120px;
+}
+
+.contact {
+    background-image: url(../image/map.png);
+    background-color: black;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: right bottom 18px;
+     padding-bottom: 115px;
+}
+
+.title2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    letter-spacing: -1px;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.title-part2 {
+    display: block;
+    font-size: 20px;
+    color: #777777;
+    font-family: 'Dancing script', serif;
+    font-weight: 400;
+    text-transform: none;
+    background-position: center;
+    margin: 0;
+    margin-bottom: 72px;
+}
+
+.singup-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sign-list-item {
+    list-style: none;
+}
+
+.sign-inf {
+    height: 50px;
+    width: 455px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding-left: 10px;
+    margin-bottom: 28px;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #bbbbbb;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+}
+
+.textarea {
+    height: 209px;
+    width: 455px;
+    resize: none;
+    padding-top: 10px;
+    padding-left: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #bbbbbb;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.btn {
+    display: block;
+    width: 240px;
+    height: 65px;
+    border-radius: 4px;
+    border: none;
+    background-color: #fdd135;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.but {
+    margin: 0 auto;
+}
+
+.singup-form-input::placeholder,
+.singup-form-textarea::placeholder {
+    text-transform: uppercase;
+}
+
+.sign-inf:required:focus:valid,
+.textarea:required:focus:valid {
+   border: 2px solid green;
+}
+
+.sign-inf:required:focus:invalid,
+.textarea:required:focus:invalid {
+    border: 2px solid red;
+}
+
