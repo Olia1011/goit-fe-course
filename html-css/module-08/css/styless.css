@@ -184,7 +184,7 @@ img {
 
 .red-btn:hover {
     border-radius: 20px;
-    background-color: #ffffff;
+    background-color: transparent;
     border: 2px solid #ff4e50;
     color: #ff4e50;
 } 
@@ -202,11 +202,14 @@ img {
 }
 
 .partner-list {
+    width: 230px;
+    margin: 0 auto;
     list-style: none;
     margin-bottom: 26px;
 }
 
 .partner-list-item {
+    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -274,20 +277,16 @@ img {
 }
 
 .about {
-    width: 267px;
     font-size: 14px;
     color: #666666;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     text-align: center;
-    padding-left: 24px;
-    padding-right: 24px;
 }
 
 @media (min-width: 768px) {
     .base {
         background-image: url(../image/pl.jpg);
-        height: 100vh;
         padding-bottom: 230px;
         padding-top: 40px;
     }
@@ -312,8 +311,8 @@ img {
 
     .title1 {
         font-size: 52px;
-        padding-left: 65px;
-        margin: 0;
+        width: 502px;
+        margin: 0 auto;
         margin-bottom: 35px;
     }
 
@@ -336,9 +335,12 @@ img {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding-left: 65px;
-        padding-right: 65px;
-        
+        width: 460px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .partner-list-item {
+     width: 200px;
     }
 
     .flex-child:nth-child(1) {
@@ -357,15 +359,10 @@ img {
         order: 4;
     }
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1439px) {
     .partners {
         padding-top: 40px;
         padding-bottom: 40px;
-    }
-
-    .partner-list {
-        padding-left: 65px;
-        padding-right: 65px;
     }
 
     .partner-list-item {
@@ -377,10 +374,9 @@ img {
     } 
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
     .base {
         background-image: url(../image/desk.jpg);
-        height: 100vh;
         padding-bottom: 225px;
         padding-top: 45px;
     }
@@ -390,9 +386,7 @@ img {
     }
 
     .title1 {
-        text-align: center;
-        padding-left: 200px;
-        padding-right: 230px;
+        /* text-align: center; */
         margin-bottom: 25px;
     }
 
@@ -403,7 +397,7 @@ img {
     }
 
     .partner-list {
-        padding: 0;
+        width: auto;
     }
 
     .partner-list-item {
