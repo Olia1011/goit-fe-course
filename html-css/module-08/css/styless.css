@@ -93,6 +93,7 @@ img {
 
 .base {
     background-image: url(../image/tel.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
     padding-bottom: 135px;
@@ -359,7 +360,7 @@ img {
         order: 4;
     }
 }
-@media (min-width: 768px) and (max-width: 1439px) {
+@media (min-width: 768px) and (max-width: 1000px) {
     .partners {
         padding-top: 40px;
         padding-bottom: 40px;
@@ -374,7 +375,7 @@ img {
     } 
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
     .base {
         background-image: url(../image/desk.jpg);
         padding-bottom: 225px;
