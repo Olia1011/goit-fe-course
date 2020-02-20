@@ -168,6 +168,7 @@ ul, ol {
     display: block;
     cursor: pointer;
     margin: 0;
+    margin-top: 18px;
     padding: 5px;
     text-align: center;
     border: none;
@@ -280,10 +281,9 @@ ul, ol {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     text-align: center;
-    padding: 0 40px;
 }
 
-  @media (max-width: 767px) {
+@media (max-width: 767px) {
     .logotype {
       display: block;
       text-align: center;
@@ -294,7 +294,12 @@ ul, ol {
     }
   }
 
-  
+  @media (min-width: 320px) and (max-width: 767px) {
+    .about {
+      padding: 0 40px;
+    }
+  }
+
 @media (min-width: 768px) {
     .header {
         background-image: url(../image/pl.jpg);
@@ -318,13 +323,13 @@ ul, ol {
       margin-top: 30px;
     }
 
-    .about {
-      padding: 0 25px;
-    }
-
     @media (min-width: 768px) and (max-width: 991px) {
       .people:nth-last-child(even) {
           margin-bottom: 28px;
+      }
+
+      .about {
+        padding: 0 25px;
       }
 
   }
