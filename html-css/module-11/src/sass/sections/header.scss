@@ -1,0 +1,198 @@
+.page-header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 1000px;
+    padding-top: 32px;
+    padding-bottom: 228px;
+    background-image: -o-linear-gradient(bottom, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.9) 100%), url(../images/baner.png);
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(252,227,138,0.9)), to(rgba(243,129,129,0.9))), url(../images/baner.png);
+    background-image: linear-gradient(to top, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.9) 100%), url(../images/baner.png);
+}
+
+.page-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 160px;
+}
+
+.site-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 30px;
+    line-height: 32px;
+    font-family: $main-font;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.main-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 14px;
+    font-family: $main-font;
+    font-weight: 400px;
+    list-style: none;
+    width: 625px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 10px;
+
+    &_item:not(:last-child) {
+        margin-right: 40px;
+
+        &-pic {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            width: 70px;
+         }
+    }
+
+    &_link {
+        font-size: 14px;
+        color: #ffffff;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-decoration: none;
+        margin: 0;
+
+        &:hover {
+            color: #fce38a;
+
+            &::after {
+                width: auto;
+            }
+        }
+
+        &::after {
+            display: block;
+            width: 0;
+            height: 2px; 
+            background-color: #fce38a;
+            content: '';
+        }
+
+    }
+}
+
+// .main-menu_item-pic {
+//     display: -webkit-box;
+//     display: -ms-flexbox;
+//     display: flex;
+//     width: 70px;
+//  }
+
+.main-menu__pic {
+    width: 18px;
+    height: 18px;
+    fill: #ffffff;
+}
+
+.main-menu_link-pic::hover 
+.main-menu__pic {
+    fill: #fce38a;
+}
+
+
+
+// .main-menu_item:not(:last-child) {
+//     margin-right: 40px;
+// }
+
+// .main-menu_link {
+//     font-size: 14px;
+//     color: #ffffff;
+//     font-weight: 400;
+//     text-transform: uppercase;
+//     text-decoration: none;
+//     margin: 0;
+// }
+
+// .main-menu_link:hover {
+//     color: #fce38a;
+// }
+
+// .main-menu_link::after {
+//     display: block;
+//     width: 0;
+//     height: 2px; 
+//     background-color: #fce38a;
+//     content: '';
+// }
+
+// .main-menu_link:hover::after {
+//     width: auto;
+// }
+
+// .main-menu_item-pic {
+//     display: -webkit-box;
+//     display: -ms-flexbox;
+//     display: flex;
+//     width: 70px;
+// }
+
+// .main-menu_link-pic {
+//     width: 18px;
+//     height: 18px;
+//     fill: #ffffff;
+// }
+
+// .main-menu_link:hover .main-menu_link-pic {
+//     fill: #fce38a;
+// }
+
+.header-subtitle {
+    font-size: 72px;
+    color: #ffffff;
+    font-family: "Kaushan Script";
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 24px;
+    line-height: 130px;
+}
+
+.header-title {
+    display: block;
+    font-size: 150px;
+    line-height: 140px;
+    color: #ffffff;
+    font-family: $main-font;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 auto;
+    text-align: center;
+    width: 830px;
+    margin-bottom: 100px;
+}
+
+.header_btn {
+    display: block;
+    margin: 0 auto;
+    width: 160px;
+    height: 35px;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
+    .page-header {
+        background-image: -o-linear-gradient(bottom, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.9) 100%), url(../images/baner@2x.png);
+        background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(252,227,138,0.9)), to(rgba(243,129,129,0.9))), url(../images/baner@2x.png);
+        background-image: linear-gradient(to top, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.9) 100%), url(../images/baner@2x.png);
+    }
+}
+
+
